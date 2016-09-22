@@ -1,0 +1,335 @@
+@media screen and (min-width: 700px){
+    
+}
+*{
+    box-sizing: border-box;
+    position: relative;
+}
+button{
+    cursor: pointer;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F0F0F0;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+#jumbo{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    background-color: #b71c1c;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    transition: all ease-in-out 0.3s;
+}
+#jumbo *{
+    transition: all ease-in-out 0.3s;
+}
+#jumbo > .title{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    text-align: initial;
+}
+#jumbo > .title > span{
+    font-weight: 600;
+}
+#jumbo > .icon{
+    position: absolute;
+    color: #03a9f4;
+}
+#jumbo > .title > .list{
+    position: absolute;
+}
+#jumbo > .description{
+    position: absolute;
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+}
+ul.list{
+    display: block;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+ul.list > li.block{
+    display: block;
+}
+ul.list > li.inline{
+    display: inline-block;
+}
+#goal{
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+#goal > button{
+    position: absolute;
+    display: block;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+}
+#tabs{
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 17px;
+}
+#tabs > li{
+    display: inline-block;
+    float: left;
+    padding: 0px 10px; 
+    text-align: center;
+    height: 57px;
+    line-height: 57px;
+    color: #BBB;
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+}
+#tabs > li.selected{
+    color: #b71c1c;
+}
+#tabs > li:hover{
+    color: #b71c1c;
+}
+#selector-container{
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    right: 20px;
+    height: 3px;
+}
+#selector-container > div{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: #b71c1c;
+    transition: all ease-in-out 0.3s;
+}
+.tab-content{
+    position: relative;
+    display: block;
+    padding: 20px 10px;
+}
+.card{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 3px;
+    max-width: 900px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.card:last-child{
+    margin-bottom: 0px;
+}
+.card > .header{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    font-weight: 600;
+    border-bottom: 2px solid #F0F0F0;
+}
+.card > .header > span > span{
+    font-weight: 400;
+    font-size: 12px;
+}
+.card > i{
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    font-size:120px;
+    color:#b71c1c
+}
+.card > .img{
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    width:100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.card > .img > img{
+    width: 100%;
+}
+
+.card > .content{
+    display: block;
+    padding: 20px 20px 20px 180px;
+    min-height: 140px;
+    text-align: justify;
+}
+
+@media screen and (max-width : 950px){
+    #jumbo{
+        height: 300px;
+        font-size: 80px;
+    }
+    #jumbo > .title{
+        line-height: 300px;
+    }
+    #jumbo > .icon{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        color: #03a9f4;
+        font-size: 600%;
+    }
+    #jumbo > .title > .list{
+        width: 230px;
+        top: 172px;
+        left: 25px;
+    }
+    #jumbo > .title > .list li{
+        float: left;
+        width: 46px;
+        height: 46px;
+    }
+    #jumbo > .title > .list i{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: #00b0ff;
+        font-size: 28px;
+    }
+    #jumbo > .title > i{
+        position:relative;
+        color: #f06292;
+        font-size: 40%;
+        left: -35px;
+        top: 5px;
+    }
+    #jumbo > .description{
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        font-size: 20px;
+    }
+    #goal{
+        position: relative;
+        height: 60px;
+        width: 100%;
+        background-color: #b71c1c;
+    }
+    #goal > .data:first-child{
+        margin-left: 20px;
+    }
+    #goal > .data{
+        display: block;
+        float: left;
+        margin-right: 20px;
+        height: 100%;
+    }
+    #goal > .data > .description{
+        display: block;
+        font-size: 35px;
+        height: 40px;
+    }
+    #goal > .data > .title{
+        display: block;
+        font-size: 15px;
+        height: 20px;
+        font-weight: 600;
+    }
+    #goal > button{
+        right: 0px;
+        top: 0px;
+        height: 60px;
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width : 950px){
+    #jumbo{
+        height: 500px;
+        font-size: 100px;
+    }
+    #jumbo > .title{
+        line-height: 500px; 
+    }
+    #jumbo > .icon{
+        position: absolute;
+        right: 100px;
+        top: 0px;
+        font-size: 400%;
+    }
+    #jumbo > .title > .list{
+        width: 250px;
+        top: 280px;
+        left: 50px;
+    }
+    #jumbo > .title > .list li{
+        float: left;
+        width: 50px;
+        height: 50px;
+    }
+    #jumbo > .title > .list i{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: #00b0ff;
+        font-size: 30px;
+    }
+    #jumbo > .title > i{
+        position:relative;
+        color: #f06292;
+        font-size: 40%;
+        left: -40px;
+        top: 5px;
+    }
+    #jumbo > .description{
+        bottom: 0px;
+        left: 0px;
+        right: 330px;
+        font-size: 25px;
+    }
+    #goal{
+        position: absolute;
+        height: 400px;
+        top: 50px;
+        right: 30px;
+        width: 300px;
+        border-radius: 3px;
+        transition: height ease-in-out 0.3s;
+    }
+    #goal > .data{
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #goal > .data > .description{
+        display: block;
+        font-size: 60px;
+    }
+    #goal > .data > .title{
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #goal > button{
+        bottom: 15px;
+        border-radius: 50%;
+        left: 0px;
+        right: 0px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+}
