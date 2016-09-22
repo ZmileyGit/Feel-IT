@@ -76,6 +76,8 @@ ul.list > li.inline{
     border: none;
     padding: 15px;
     font-size: 15px;
+    min-width: 60px;
+    min-height: 60px;
 }
 #tabs{
     height: 60px;
