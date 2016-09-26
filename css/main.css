@@ -180,6 +180,12 @@ ul.list > li.inline{
     text-align: justify;
 }
 
+.card > .media > iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 3px 3px;
+}
+
 @media screen and (max-width : 950px){
     #jumbo{
         height: 300px;
@@ -257,6 +263,9 @@ ul.list > li.inline{
         height: 60px;
         padding: 15px;
     }
+    .card > .media{
+        height: 300px;
+    }
 }
 
 @media screen and (min-width : 950px){
@@ -333,5 +342,8 @@ ul.list > li.inline{
         right: 0px;
         margin: 0 auto;
         padding: 15px;
+    }
+    .card > .media{
+        height: 500px;
     }
 }
