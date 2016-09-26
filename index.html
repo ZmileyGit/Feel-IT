@@ -1,299 +1,159 @@
 ﻿<!DOCTYPE html>
-
 <html>
-
 <head>
-
     <title>Feel IT</title>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Raleway:400,600" rel="stylesheet">
-
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-
-
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Noto+Serif|Raleway:400,600" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
     <script src="./js/main.js"></script>
-
     <link href="./css/main.css" rel="stylesheet" type="text/css" />
-
 </head>
-
 <body ng-app="landingPage" ng-controller="mainController">
-
     <div id="jumbo" style="">
-
         <div class="title" style="">
-
             <span style="">Feel IT</span>
-
             <i class="material-icons" style="">face</i>
-
             <ul class="list" style="">
-
                 <li class="block" style="">
-
                     <i class="material-icons" style="color: #ffeb3b;">sentiment_very_dissatisfied</i>
-
                 </li>
-
                 <li class="block" style="">
-
                     <i class="material-icons" style="color: #ffc107;">sentiment_dissatisfied</i>
-
                 </li>
-
                 <li class="block" style="">
-
                     <i class="material-icons" style="">sentiment_neutral</i>
-
                 </li>
-
                 <li class="block" style="">
-
                     <i class="material-icons" style="color: #80deea;">sentiment_satisfied</i>
-
                 </li>
-
                 <li class="block" style="">
-
                     <i class="material-icons" style="color: #76ff03;">sentiment_very_satisfied</i>
-
                 </li>
-
             </ul>
-
         </div>
-
         <div class="description" style="">
-
             Feelt IT is a platform that will let you know the emotions reflected by Twitter users about a specific topic.
-
         </div>
-
     </div>
-
     <div id="goal" style="">
-
         <div class="data" style="">
-
             <span class="description" style="">0</span>
-
             <span class="title" style="">backers</span>
-
         </div>
-
         <div class="data" style="">
-
             <span class="description" style="">$0</span>
-
             <span class="title" style="">pledged of $10,000 goal</span>
-
         </div>
-
         <div class="data" style="">
-
             <span class="description" style="">100</span>
-
             <span class="title" style="">days to go</span>
-
         </div>
-
         <button style="">
-
             <i class="material-icons">people</i>
-
         </button>
-
     </div>
-
     <div>
-
         <ul id="tabs" class="list" style="">
-
             <li ng-repeat="tab in tabman.content" ng-click="tabman.change($index);" ng-class="tabman.class($index);">
-
                 {{tab.title}}
-
             </li>
-
         </ul>
-
         <div id="selector-container" style="">
-
             <div style="" ng-style="tabman.selector();"></div>
-
         </div>
-
     </div>
-
     <div style="" class="tab-content" ng-show="tabman.selected === 0;">
-
         <div class="card" style="">
-
             <div class="header" style="">
-
                 <span>What is Feel IT?</span>
-
             </div>
-
             <i class="material-icons" style="color:#3f51b5;">book</i>
-
             <div style="" class="content">
-
                 <span>
-
                     Imagine that you're a start-up or an enterprise introducing a new product or service. What could you do if you knew exactly how people is feeling about yourself or your new product? That's what <b>Feel IT</b> is all about. We want to provide you with a powerful tool that lets you know the emotions and sentiments reflected in social media about a topic of your interest. We want to provide enterprises, start-ups and consultants with a tool that lets them take the right decisions based on how people is feeling. We want you to know if they feel joy, sadness, anger, disgust or fear.
-
                 </span>
-
             </div>
-
         </div>
-
         <div class="card" style="">
-
             <div class="header" style="">
-
                 <span>Why are you making this?</span>
-
             </div>
-
             <i class="material-icons" style="">favorite</i>
-
             <div style="" class="content">
-
                 We love computers, programming, gaming, music, drawing, and many other things, but more importantly we love the idea of empowering people with new technology. We want to make people's life easier with the use of technology. We all have emotions and react according to them, that's why we want to close the gap of communication between consumer and producer. At the core of <b>Feel IT</b> there's an ideal: if we can understand how someone feels about us or something ours we can act accordingly and improve.
-
             </div>
-
         </div>
-
         <div class="card" style="">
-
             <div class="header" style="">
-
                 <span>Isn't it kind of difficult to know how people feel?</span>
-
             </div>
-
             <i class="material-icons" style="color:#ffc107;">lightbulb_outline</i>
-
             <div style="" class="content">
-
                 Yes, kind of... You may even ask that if even we, as humans, sometimes struggle to understand each other, how is a computer supposed to do so? Believe or not, they can cope with human feelings with enough training and programming. Consider the following: when we write a tweet or a post we actually reflect emotions with every word we type, don't we? That is where <b>Natural Language Processing</b> enters into scene. If a program is capable of extracting keywords of a text, then it should be able to map emotions to some of those keywords allowing the computer to extract all the sentiments expressed throughout a text. In conjunction with Twitter, a library full of texts about almost anything that people is interested in. That's our plan.
-
             </div>
-
         </div>
-
     </div>
-
     <div style="" class="tab-content" ng-show="tabman.selected === 1;">
-
         <div class="card" style="">
-
             <div class="header" style="">
-
                 <span>Good vibes <span>Pledge $10 or more</span></span>
-
             </div>
-
             <i class="material-icons" style="color:#ffc107;">grade</i>
-
             <div style="" class="content">
-
                 Thank you very much! We appreciate a lot your support. We will show you our gratitude by including your name in our application credits and giving you access to an exclusive <b>Feel IT</b> wallpaper so you can show off your greatness.
-
             </div>
-
         </div>
-
         <div class="card" style="">
-
             <div class="header" style="">
-
                 <span>Feeling Great <span>Pledge $50 or more</span></span>
-
             </div>
-
             <i class="material-icons" style="color:#2196f3;">loyalty</i>
-
             <div style="" class="content">
-
                 Why, thank you! We are eternally in debt with you, seriously! You'll be included in our application credits, receive our exclusive <b>Feel IT</b> wallpaper and get access to our platform so you can follow a topic of your choice on Twitter and experience the amazing capabilities that Feel IT offers.
-
             </div>
-
         </div>
-
         <div class="card" style="">
-
             <div class="header" style="">
-
                 <span>Feeling Awesome <span>Pledge $100 or more</span></span>
-
             </div>
-
             <i class="material-icons" style="color:#e91e63;">favorite_border</i>
-
             <div style="" class="content">
-
                 No way! We don't believe it! There is simply no way we can thank you enough! Of course you'll be included in our credits and receive our exclusive wallpaper. But that won't be all, you'll be able to experience <b>Feel IT</b> by following three topics on Twitter and letting us analyze those pesky texts for you.
-
             </div>
-
         </div>
-
         <div class="card" style="">
-
             <div class="header" style="">
-
                 <span>I'm Really Feeling IT <span>Pledge $1000 or more</span></span>
-
             </div>
-
             <i class="material-icons" style="color:#f44336;">favorite</i>
-
             <div style="" class="content">
-
                 We are speechless? You definitely are Feeling IT. It's simply impossible for us to show you our gratitude. There are no words to describe how grateful we are. That's why we won't simply give you all of the things above or double them. You'll be able to participate in the development of <b>Feel IT</b> with us, and propose a new functionality. <small style="position: absolute;bottom: 20px;right: 20px;">Limited to 5 backers</small>
-
             </div>
-
         </div>
-
     </div>
-
     <div style="" class="tab-content" ng-show="tabman.selected === 2;">
-
         <div class="card" style="">
-
             <div class="header" style="">
-
                 <span>Sounds cool but... Who are you?</span>
-
             </div>
-
             <i class="material-icons" style="">people</i>
-
             <div style="" class="content">
-
                 Ruby, Mike and Erick. That's who we are. Just kidding, we are a team of friends and bachelors of the Instituto Tecnol&oacute;gico de Monterrey Campus Ciudad de M&eacute;xico. Our goal is to promote the study and investigation of <b>Natural Language Processing</b> in our native language, <b>Spanish</b>. Currently, this branch of artificial intelligence, computer science and linguistics is having a strong focus in English thanks to digital assistants such as Siri, Cortana and Google's. By providing a Mexican start-up whose goal is focused in this area, we want to boost the development and inversion towards its Spanish segment. We want to do it in such a way that hopefully one day we will be able to provide the same benefits of Feel IT to Spanish speakers.
-
             </div>
-
         </div>
-
+        <div class="card" style="">
+            <div class="header" style="">
+                <span>Feel IT's Origin</span>
+            </div>
+            <div style="" class="media">
+                <iframe style="" src="https://www.youtube.com/embed/lP_nijcsU1U" ng-src="{{video.src()}}" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
-
 </body>
-
 </html>
